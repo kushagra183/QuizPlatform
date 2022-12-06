@@ -9,13 +9,17 @@ import pic2 from "../Images/myquiz.png";
 import pic3 from "../Images/play.png"
 import { useState } from 'react';
 
+//Home page component
 const HomePage = () => {
-const [headLine, setHeadLine] = useState("");
 
+const [headLine, setHeadLine] = useState(""); //for setting headline
+
+//Change() for changing headline.
 const change = ()=>{
   headLine === "Welcome to our website!" ? setHeadLine("Create your quiz and play!"):setHeadLine("Welcome to our website!")
-}
+}   
 
+// settimeout() for calling change function every 2 seconds
 setTimeout(() => {
   change();
 }, 2000);
@@ -24,6 +28,8 @@ setTimeout(() => {
     <div style={{marginTop:"100px"}}>
         <h1 style={{textAlign:"center"}}>{headLine}</h1>
     <div style={{display:"flex",alignItems:"center",justifyContent:"space-evenly",flexWrap:"wrap"}}>
+
+      {/** Created three cards using Material UI */}
         <Card sx={{ maxWidth: 350, marginTop:"20px",textDecoration:"none", borderRadius:"20px", boxShadow:"2px 2px 4px black"}} >
       <CardActionArea>
         <CardMedia
