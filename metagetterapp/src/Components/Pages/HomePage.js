@@ -47,7 +47,7 @@ setTimeout(() => {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 350,marginTop:"20px",textDecoration:"none",borderRadius:"20px", boxShadow:"2px 2px 4px black" }} >
+    <Card sx={{ maxWidth: 350,marginTop:"20px",textDecoration:"none",borderRadius:"20px", boxShadow:"2px 2px 4px black" }}component={Link} to={"/my-quiz"} >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -63,7 +63,7 @@ setTimeout(() => {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 350, marginTop:"20px",textDecoration:"none", borderRadius:"20px", boxShadow:"2px 2px 4px black"}} >
+    <Card sx={{ maxWidth: 350, marginTop:"20px",textDecoration:"none", borderRadius:"20px", boxShadow:"2px 2px 4px black"}}  >
       <CardActionArea>
         <CardMedia
           component="img"
