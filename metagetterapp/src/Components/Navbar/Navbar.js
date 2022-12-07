@@ -29,7 +29,7 @@ const Navbar = () => {
                         <Tabs indicatorColor='primary' value={val} onChange={(e,val)=>setVal(val)}> {/**onChange will return the val of the current tab and which will be set to 'value' for highlighting the current tab with primary color */}
                         <Tab label="Home"  component={Link} to={"/"}></Tab>  
                         <Tab label="My Quiz" component={Link} to={"/my-quiz"} ></Tab>
-                        <Tab label="Play Quiz"></Tab>
+                        <Tab label="Play Quiz" component={Link} to={"/play-quiz"}></Tab>
                                            </Tabs>
                     </>
                     }

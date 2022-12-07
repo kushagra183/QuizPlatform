@@ -22,7 +22,7 @@ const DrawerComp = () => {
               <ListItemText >My Quiz</ListItemText>
               </ListItemIcon> 
             </ListItemButton>
-         <ListItemButton onClick={()=>setDraw(false)} >
+         <ListItemButton onClick={()=>setDraw(false)}component={Link} to="/play-quiz" >
              <ListItemIcon>
               <ListItemText >Play Quiz</ListItemText>
               </ListItemIcon> 
