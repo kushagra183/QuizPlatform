@@ -3,7 +3,7 @@ import { AppBar, Toolbar,Tab,Tabs, useMediaQuery,useTheme } from '@mui/material'
 import { Box } from '@mui/system'
 import pic from "../Images/META.png";
 import DrawerComp from './DrawerComp';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //Navbar Component
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
                         isMatch ? <DrawerComp/>:<>
                         {/* Links */}
                         <Tabs indicatorColor='primary' value={val} onChange={(e,val)=>setVal(val)}> {/**onChange will return the val of the current tab and which will be set to 'value' for highlighting the current tab with primary color */}
-                        <Tab label="Home"></Tab>  
+                        <Tab label="Home"  component={Link} to={"/"}></Tab>  
                         <Tab label="My Quiz" ></Tab>
                         <Tab label="Play Quiz"></Tab>
                                            </Tabs>
