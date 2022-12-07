@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Drawer,List, ListItemButton, ListItemIcon, ListItemText, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 //Drawer component 
@@ -12,7 +12,7 @@ const DrawerComp = () => {
     <div>
       <Drawer open={draw} onClose={()=>setDraw(false)}> {/**Drawer imported from material UI*/}
         <List>
-         <ListItemButton onClick={()=>setDraw(false)}> {/**Drawer will close as the option is clicked */}
+         <ListItemButton onClick={()=>setDraw(false)} component={Link} to="/"> {/**Drawer will close as the option is clicked */}
              <ListItemIcon>
               <ListItemText >Home</ListItemText>
               </ListItemIcon> 
