@@ -4,6 +4,7 @@ import Footer from './Components/Footer/Footer';
 import { Routes, Route } from "react-router-dom";
 import CreateQuiz from './Components/Pages/CreateNewQuiz/CreateQuiz';
 import MyQuiz from './Components/Pages/MyQuizzes/MyQuiz';
+import PlayQuiz from './Components/Pages/PlayQuiz/PlayQuiz';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/create-new" element={<CreateQuiz />} />
       <Route path="/my-quiz" element={<MyQuiz />} />
+      <Route path="/play-quiz" element={<PlayQuiz />} />
 
 
       </Routes>

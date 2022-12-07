@@ -19,6 +19,18 @@ export const addQuiz = (data) => {
       payload: id,
     };
   };
+    export const playQuiz = (id) => {
+    return {
+      type: ACTIONTYPE.PLAYQUIZ,
+      payload: id,
+    };
+  };
+  export const getName = (name) => {
+    return {
+      type: ACTIONTYPE.GETNAME,
+      payload: name,
+    };
+  };
   
   
  
