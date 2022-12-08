@@ -8,7 +8,7 @@ function Footer() {
           <a href="https://www.instagram.com/metagetters" target="blank"><i className="fa fa-instagram" /></a>
           <a href="https://www.youtube.com/channel/UCvfyhOnrLFg75qT1AVQ7aBg" target="blank"><i className="fa fa-youtube" /></a>
           <a href="https://github.com/kushagra183" target="blank"><i className="fa fa-github" /></a>
-          <a href="#"><i className="fa fa-facebook" /></a>
+          <a href="https://facebook.com/profile.php?id=100088240313452" target="blank"><i className="fa fa-facebook" /></a>
         </div>
        
         <div className="row">
