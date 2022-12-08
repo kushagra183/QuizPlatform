@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import CreateQuiz from './Components/Pages/CreateNewQuiz/CreateQuiz';
 import MyQuiz from './Components/Pages/MyQuizzes/MyQuiz';
 import PlayQuiz from './Components/Pages/PlayQuiz/PlayQuiz';
+import NotFound from './Components/NotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/create-new" element={<CreateQuiz />} />
       <Route path="/my-quiz" element={<MyQuiz />} />
       <Route path="/play-quiz" element={<PlayQuiz />} />
+      <Route path='*' element={<NotFound />}/>
 
 
       </Routes>
