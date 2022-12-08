@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {addQuiz} from "../../../Redux/Actions/Actions"
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -26,7 +26,7 @@ const NewQuizForm = () => {
 
 
   const dispatch = useDispatch(); //to dispatch action
-//   const navigate = useNavigate(); //to navigate to other component(pages)
+  const navigate = useNavigate(); //to navigate to other component(pages)
   
 
   useEffect(() => {                     //useEffect hook to run the timout functions when the "added" and "answerDone" changes 
@@ -120,7 +120,7 @@ event.preventDefault();
     setCount(1);
     titleRef.current.value = "";
     descriptionRef.current.value = "";
-    // navigate("/play-quiz")
+    navigate("/play-quiz")
   };
 
   const deleteHandler = (id) => {     // this function will run when delete button inside options is clicked and return the new filtered array

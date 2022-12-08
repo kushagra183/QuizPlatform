@@ -6,6 +6,7 @@ import CreateQuiz from './Components/Pages/CreateNewQuiz/CreateQuiz';
 import MyQuiz from './Components/Pages/MyQuizzes/MyQuiz';
 import PlayQuiz from './Components/Pages/PlayQuiz/PlayQuiz';
 import NotFound from './Components/NotFound';
+import QuizCard from './Components/Pages/PlayQuiz/QuizCard';
 
 function App() {
   return (
@@ -16,9 +17,8 @@ function App() {
       <Route path="/create-new" element={<CreateQuiz />} />
       <Route path="/my-quiz" element={<MyQuiz />} />
       <Route path="/play-quiz" element={<PlayQuiz />} />
+      <Route path="/quiz" element={<QuizCard />} /> 
       <Route path='*' element={<NotFound />}/>
-
-
       </Routes>
      
       <Footer />

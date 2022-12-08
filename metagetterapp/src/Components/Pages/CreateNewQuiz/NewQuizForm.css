@@ -4,7 +4,6 @@
 .heading{
     display: flex;
     justify-content: center;
-    text-shadow: 2px 2px 4px rgb(132, 131, 131);
     font-family: sans-serif;
     color: rgb(50, 50, 50)
 }

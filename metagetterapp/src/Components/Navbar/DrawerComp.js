@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Drawer,List, ListItemButton, ListItemIcon, ListItemText, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-
+import click from "../Images/click.mp3"
 
 //Drawer component 
 const DrawerComp = () => {
@@ -12,17 +12,17 @@ const DrawerComp = () => {
     <div>
       <Drawer open={draw} onClose={()=>setDraw(false)}> {/**Drawer imported from material UI*/}
         <List>
-         <ListItemButton onClick={()=>setDraw(false)} component={Link} to="/"> {/**Drawer will close as the option is clicked */}
+         <ListItemButton onClick={()=>{new Audio(click).play();setDraw(false)}} component={Link} to="/"> {/**Drawer will close as the option is clicked */}
              <ListItemIcon>
               <ListItemText >Home</ListItemText>
               </ListItemIcon> 
             </ListItemButton>
-         <ListItemButton onClick={()=>setDraw(false)} component={Link} to="/my-quiz">
+         <ListItemButton onClick={()=>{new Audio(click).play();setDraw(false)}} component={Link} to="/my-quiz">
              <ListItemIcon>
               <ListItemText >My Quiz</ListItemText>
               </ListItemIcon> 
             </ListItemButton>
-         <ListItemButton onClick={()=>setDraw(false)}component={Link} to="/play-quiz" >
+         <ListItemButton onClick={()=>{new Audio(click).play();setDraw(false)}}component={Link} to="/play-quiz" >
              <ListItemIcon>
               <ListItemText >Play Quiz</ListItemText>
               </ListItemIcon> 

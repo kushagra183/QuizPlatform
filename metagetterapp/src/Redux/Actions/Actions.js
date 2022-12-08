@@ -33,4 +33,15 @@ export const addQuiz = (data) => {
   };
   
   
+  export const getAnswer = (ans) => {
+    return {
+      type: ACTIONTYPE.GETANSWER,
+      payload: ans,
+    };
+  };
+  export const resetQuiz = () => {
+    return {
+      type: ACTIONTYPE.RESET,
+    };
+  };
  
