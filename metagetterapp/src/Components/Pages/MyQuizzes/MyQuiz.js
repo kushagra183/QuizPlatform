@@ -66,6 +66,8 @@ const MyQuiz = () => {
           ) : (
             <div className="table">
               <table>
+                <thead>
+
                 <tr className="tre tableHead">
                   <th>Quiz No.</th>
                   <th>Title</th>
@@ -73,8 +75,10 @@ const MyQuiz = () => {
                   <th>Created On</th>
                   <th>Actions</th>
                 </tr>
-                <hr/>
+              
+                </thead>
                 {Quiz.map((el, i) => (
+                  <tbody key={i}>
                   <tr className="tre">
                     <td >{i + 1}</td>
                     <td className="ti">{el.title}</td>
@@ -95,6 +99,7 @@ const MyQuiz = () => {
                       </Button>
                     </td>
                   </tr>
+                  </tbody>
                 ))}
               </table>
             </div>

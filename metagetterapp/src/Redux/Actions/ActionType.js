@@ -4,6 +4,8 @@ const ACTIONTYPE = {
     DELETEQUIZ: "DELETEQUIZ",
     PLAYQUIZ: "PLAYQUIZ",
     GETNAME: "GETNAME",
+    GETANSWER: "GETANSWER",
+    RESET: "RESET",
   };
 
   export default ACTIONTYPE;
