@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { resetQuiz } from "../../../Redux/Actions/Actions";
 import img from "../../Images/bg.png";
 import { Button } from "@mui/material";
-
+import click from "../../Images/click.mp3"
 function Result(props) {
   const results = useSelector((state) => state.reducer.answers); //retrieving the array of selected answers
   const mapped = results.map((el) => el.isCorrect); //array of isCorrect values(either true or false)
@@ -15,6 +15,8 @@ function Result(props) {
 
   //this func will run when "Done" button is clicked
   const resetQuizHandler = () => {
+    new Audio(click).play();
+    
     disptach(resetQuiz());
     navigate("/");
   };
