@@ -16,6 +16,7 @@ function Result(props) {
   //this func will run when "Done" button is clicked
   const resetQuizHandler = () => {
     new Audio(click).play();
+    
     disptach(resetQuiz());
     navigate("/");
   };
